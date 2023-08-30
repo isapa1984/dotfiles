@@ -6,3 +6,5 @@ starship
 zsh-autosuggestions
 zsh-syntax-highlighting
 pip
+cascadia-fonts-all
+symbols nerd fonts
