@@ -14,8 +14,12 @@ for arquivo in "${arquivos[@]}"; do
 	rsync -u $HOME/$arquivo .
 done
 
-echo "Subindo no GIT"
-git add .
-git commit -m "Backup"
-git push origin main
+if [ -n "$(git status --porcelain)" ]; then 
+	echo "Subindo no GIT"
+	git add .
+	git commit -m "Backup"
+	git push origin main
+fi
+
+
 
