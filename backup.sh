@@ -15,10 +15,12 @@ for arquivo in "${arquivos[@]}"; do
 done
 
 if [ -n "$(git status --porcelain)" ]; then 
-	echo "Subindo no GIT"
+	echo "Atualizando no GIT"
 	git add .
 	git commit -m "Backup"
 	git push origin main
+else 
+	echo "Nada para atualizar no GIT"
 fi
 
 
