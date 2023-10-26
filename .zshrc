@@ -80,11 +80,13 @@ plugins=(
     fzf
     git
     kubectl
+    minikube
     npm
     starship
     zsh-autosuggestions
     zsh-syntax-highlighting
 	pip
+	snap
 )
 
 # Configuração do FZF para o Oh my ZSH
@@ -119,10 +121,27 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-alias rsync='rsync -ah --info=PROGRESS2,STATS1'
+alias rsync='rsync -h --info=PROGRESS2,STATS1'
 alias sup='sudo sh $HOME/apps/system/system-update.sh'
 alias svi='sudo vi'
 alias torg='$HOME/apps/time-organizer/main.py'
+alias minidocker='eval $(minikube docker-env)'
+alias gd-pessoal-m='rclone mount gdrive-pessoal: $HOME/gdrive/gdrive-pessoal \
+    --buffer-size=64M \
+    --dir-cache-time=24h \
+    --poll-interval=10s \
+    --transfers=16 \
+    --vfs-cache-mode=full \
+    --vfs-cache-max-size=512M \
+    --vfs-cache-max-age=24h \
+    --vfs-read-ahead=8M \
+    --vfs-read-chunk-size=16M \
+    --drive-chunk-size=8M \
+    --drive-pacer-min-sleep=10ms \
+    --drive-pacer-burst=200 \
+    --write-back-cache \
+    --daemon'
+alias gd-pessoal-u='fusermount -u $HOME/gdrive/gdrive-pessoal'
 
 # Configurações de Ferramentas
 
@@ -135,3 +154,8 @@ fi
 # Krew Plugin para Kubectl
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
+# Kompose completion
+source <(kompose completion zsh)
+
+# opam configuration
+[[ ! -r /home/igoralmeida/.opam/opam-init/init.zsh ]] || source /home/igoralmeida/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
