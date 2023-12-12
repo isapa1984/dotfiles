@@ -1,5 +1,13 @@
 #!/bin/bash
 
+if [[ -z $1 ]]; then
+	printf "Uso: backup.sh OPÇÃO\n"
+	printf "OPÇÃO:\n"
+	printf "\t-p: Salva na pasta 'pessoal'\n"
+	printf "\t-t: Salva na pasta 'trabalho'\n"
+	exit 0
+fi
+
 arquivos=(	
 	.bash_aliases
 	.bash_profile
@@ -11,13 +19,16 @@ arquivos=(
 
 echo "Copiando arquivos"
 for arquivo in "${arquivos[@]}"; do	
-	
-	if [[ -n $1 ]] && [[ $1 -eq "-t" ]] then
-		rsync -u $HOME/$arquivo trabalho/
-	else
-		rsync -u $HOME/$arquivo pessoal/
+	if [[ -e $HOME/$arquivo ]]; then
+		case $1 in
+			-p)
+				rsync -u $HOME/$arquivo pessoal
+				;;
+			-t)
+				rsync -u $HOME/$arquivo trabalho
+				;;
+		esac
 	fi
-	
 done
 
 if [ -n "$(git status --porcelain)" ]; then 
@@ -28,6 +39,3 @@ if [ -n "$(git status --porcelain)" ]; then
 else 
 	echo "Nada para atualizar no GIT"
 fi
-
-
-
