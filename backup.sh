@@ -10,8 +10,14 @@ arquivos=(
 )
 
 echo "Copiando arquivos"
-for arquivo in "${arquivos[@]}"; do
-	rsync -u $HOME/$arquivo .
+for arquivo in "${arquivos[@]}"; do	
+	
+	if [[ -n $1 ]] && [[ $1 -eq "-t" ]] then
+		rsync -u $HOME/$arquivo trabalho/
+	else
+		rsync -u $HOME/$arquivo pessoal/
+	fi
+	
 done
 
 if [ -n "$(git status --porcelain)" ]; then 
