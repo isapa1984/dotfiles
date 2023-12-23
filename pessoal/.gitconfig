@@ -1,0 +1,7 @@
+[user]
+	email = igordsouza@gmail.com
+	name = Igor Pastor
+[http]
+	sslVerify = false
+[credential]
+	helper = store

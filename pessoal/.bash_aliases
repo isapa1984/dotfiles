@@ -1,0 +1,5 @@
+alias rsync='rsync -ah --info=PROGRESS2,STATS1'
+alias sup='sudo sh $HOME/apps/scripts/system/system-update.sh'
+alias svi='sudo vi'
+alias trt-c='sh $HOME/apps/scripts/trt11/vpn/trt11-vpn-login.sh'
+alias trt-d='sh $HOME/apps/scripts/trt11/vpn/trt11-vpn-logout.sh'
