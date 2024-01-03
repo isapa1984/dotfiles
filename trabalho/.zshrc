@@ -125,7 +125,7 @@ alias rsync='rsync -h --info=PROGRESS2,STATS1'
 alias sup='sudo sh $HOME/apps/system/system-update.sh'
 alias svi='sudo vi'
 alias torg='$HOME/apps/time-organizer/main.py'
-alias docker-use-minikube='eval $(minikube docker-env)'
+alias minikube-local-docker='minikube start --container-runtime=docker --vm=true && eval $(minikube docker-env)'
 alias gdrive-pessoal='rclone mount gdrive-pessoal: $HOME/gdrive/gdrive-pessoal \
 	--buffer-size=64M \
     --dir-cache-time=24h \
