@@ -23,16 +23,14 @@ arquivos=(
 
 echo "Copiando arquivos"
 for arquivo in "${arquivos[@]}"; do	
-	if [[ -e $HOME/$arquivo ]]; then
-		case $1 in
-			-p)
-				rsync -u $HOME/$arquivo pessoal
-				;;
-			-t)
-				rsync -u $HOME/$arquivo trabalho
-				;;
-		esac
-	fi
+	case $1 in
+		-p)
+			rsync -u $HOME/$arquivo pessoal
+			;;
+		-t)
+			rsync -u $HOME/$arquivo trabalho
+			;;
+	esac
 done
 
 if [ -n "$(git status --porcelain)" ]; then 
