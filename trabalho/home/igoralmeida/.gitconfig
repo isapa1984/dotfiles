@@ -1,0 +1,7 @@
+[credential]
+	helper = store
+[user]
+	name = Igor Almeida
+	email = igor.almeida@trt11.jus.br
+[init]
+	defaultBranch = main

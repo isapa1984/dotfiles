@@ -1,0 +1,12 @@
+add_newline = false
+
+[directory]
+truncation_length = 6
+
+[kubernetes]
+symbol = "⛵ "
+style = "dimmed green"
+disabled = true
+
+[kubernetes.context_aliases]
+"dev.local.cluster.k8s" = "dev"

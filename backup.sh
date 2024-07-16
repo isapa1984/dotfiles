@@ -25,10 +25,10 @@ echo "Copiando arquivos"
 for arquivo in "${arquivos[@]}"; do	
 	case $1 in
 		-p)
-			cp -r $HOME/$arquivo pessoal
+			rsync -aR $HOME/$arquivo pessoal
 			;;
 		-t)
-			cp -r $HOME/$arquivo trabalho
+			rsync -aR $HOME/$arquivo trabalho
 			;;
 	esac
 done
