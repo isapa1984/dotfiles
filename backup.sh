@@ -15,10 +15,10 @@ arquivos=(
 	.gitconfig
 	.config/starship.toml
 	.zshrc
-	.config/sway
-	.config/waybar
-	.config/wofi
-	.config/fuzzel
+	.config/sway/*
+	.config/waybar/*
+	.config/wofi/*
+	.config/fuzzel/*
 )
 
 echo "Copiando arquivos"
