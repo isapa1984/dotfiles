@@ -87,6 +87,7 @@ plugins=(
     zsh-syntax-highlighting
 	pip
 	snap
+	kind
 )
 
 # Configuração do FZF para o Oh my ZSH
@@ -122,10 +123,11 @@ source $ZSH/oh-my-zsh.sh
 #
 
 alias rsync='rsync -h --info=PROGRESS2,STATS1'
-alias sup='sudo sh $HOME/apps/system/system-update.sh'
-alias svi='sudo vi'
+alias sup='sudo dnf upgrade --refresh -y && flatpak update -y'
+alias svi='sudo nvim'
+alias vi='nvim'
 alias torg='$HOME/apps/time-organizer/main.py'
-alias minikube-local-docker='minikube start --container-runtime=docker --vm=true && eval $(minikube docker-env)'
+alias docker-use-minikube='eval $(minikube docker-env)'
 alias gdrive-pessoal='rclone mount gdrive-pessoal: $HOME/gdrive/gdrive-pessoal \
 	--buffer-size=64M \
     --dir-cache-time=24h \
@@ -156,3 +158,10 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Kompose completion
 source <(kompose completion zsh)
+
+# Helm completion
+source <(helm completion zsh)
+
+# Configuração de certificados para apps Node
+export NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
+
