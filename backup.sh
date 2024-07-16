@@ -15,20 +15,20 @@ arquivos=(
 	.gitconfig
 	.config/starship.toml
 	.zshrc
-	.config/sway/*
-	.config/waybar/*
-	.config/wofi/*
-	.config/fuzzel/*
+	.config/sway/
+	.config/waybar/
+	.config/wofi/
+	.config/fuzzel/
 )
 
 echo "Copiando arquivos"
 for arquivo in "${arquivos[@]}"; do	
 	case $1 in
 		-p)
-			cp -ru $HOME/$arquivo pessoal
+			cp -r $HOME/$arquivo pessoal
 			;;
 		-t)
-			cp -ru $HOME/$arquivo trabalho
+			cp -r $HOME/$arquivo trabalho
 			;;
 	esac
 done
