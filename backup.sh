@@ -19,6 +19,7 @@ arquivos=(
 	.config/waybar/
 	.config/wofi/
 	.config/fuzzel/
+	.config/foot/
 )
 
 echo "Copiando arquivos"

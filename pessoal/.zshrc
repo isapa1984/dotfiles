@@ -35,7 +35,7 @@ ZSH_THEME="robbyrussell"
 # zstyle ':omz:update' frequency 13
 
 # Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
+DISABLE_MAGIC_FUNCTIONS="true"
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -119,26 +119,25 @@ source $ZSH/oh-my-zsh.sh
 #
 
 alias rsync='rsync -ah --info=PROGRESS2,STATS1'
-alias sup='sudo sh $HOME/apps/system/system-update.sh'
+alias sup='sudo dnf upgrade --refresh -y && flatpak update -y'
 alias svi='sudo vi'
 alias torg='$HOME/apps/time-organizer/main.py'
-alias gdrive='google-drive-ocamlfuse $HOME/gdrive'
-# alias gdrive='rclone mount google-drive: $HOME/gdrive \
-#     --buffer-size=32M \
-#     --dir-cache-time=24h \
-#     --poll-interval=10s \
-#     --transfers=16 \
-#     --write-back-cache \
-#     --daemon \
-#     --vfs-cache-mode=full \
-#     --vfs-cache-max-size=512M \
-#     --vfs-cache-max-age=24h \
-#     --vfs-read-ahead=32M \
-#     --drive-chunk-size=32M \
-#     --drive-pacer-min-sleep=10ms \
-#     --drive-pacer-burst=200 \
-#     --drive-skip-gdocs
-# '
+alias gdrive='rclone mount google-drive: $HOME/gdrive \
+    --buffer-size=64M \
+    --dir-cache-time=24h \
+    --poll-interval=10s \
+    --transfers=16 \
+    --write-back-cache \
+    --daemon \
+    --vfs-cache-mode=full \
+    --vfs-cache-max-size=512M \
+    --vfs-cache-max-age=24h \
+    --vfs-read-ahead=64M \
+    --drive-chunk-size=64M \
+    --drive-pacer-min-sleep=10ms \
+    --drive-pacer-burst=200 \
+    --drive-skip-gdocs
+'
 
 # Configurações de Ferramentas
 
