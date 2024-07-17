@@ -8,7 +8,7 @@ if [[ -z $1 ]]; then
 	exit 0
 fi
 
-arquivos=(	
+itens=(	
 	.bash_aliases
 	.bash_profile
 	.bashrc	
@@ -22,15 +22,15 @@ arquivos=(
 	.config/foot/
 )
 
-echo "Copiando arquivos"
-for arquivo in "${arquivos[@]}"; do	
-	if [[ -e $arquivo ]]; then
+echo "Copiando itens"
+for item in "${itens[@]}"; do	
+	if [[ -e $item ]]; then
 		case $1 in
 			-p)
-				rsync -aR $HOME/./$arquivo pessoal
+				rsync -aR $HOME/./$item pessoal
 				;;
 			-t)
-				rsync -aR $HOME/./$arquivo trabalho
+				rsync -aR $HOME/./$item trabalho
 				;;
 		esac
 	fi
