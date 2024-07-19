@@ -147,5 +147,3 @@ if [[ -d $HOME/.asdf/ ]]; then
     source $HOME/.asdf/plugins/java/set-java-home.zsh
 fi
 
-# opam configuration
-[[ ! -r /home/igor/.opam/opam-init/init.zsh ]] || source /home/igor/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null

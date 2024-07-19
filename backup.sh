@@ -26,16 +26,14 @@ itens=(
 
 echo "Copiando itens"
 for item in "${itens[@]}"; do	
-	if [[ -e $item ]]; then
-		case $1 in
-			-p)
-				rsync -aR $HOME/./$item pessoal
-				;;
-			-t)
-				rsync -aR $HOME/./$item trabalho
-				;;
-		esac
-	fi
+	case $1 in
+		-p)
+			rsync -aR $HOME/./$item pessoal
+			;;
+		-t)
+			rsync -aR $HOME/./$item trabalho
+			;;
+	esac
 done
 
 if [ -n "$(git status --porcelain)" ]; then 
