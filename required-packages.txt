@@ -7,4 +7,10 @@ zsh-autosuggestions
 zsh-syntax-highlighting
 pip
 cascadia-fonts-all
-symbols nerd fonts
+symbols-nerd-fonts
+
+-- Sway --
+
+fuzzel
+swaync (remover o dunst)
+wlogout

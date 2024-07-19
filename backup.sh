@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Validação do programa
+
 if [[ -z $1 ]]; then
 	printf "Uso: backup.sh OPÇÃO\n"
 	printf "OPÇÃO:\n"
@@ -8,35 +10,22 @@ if [[ -z $1 ]]; then
 	exit 0
 fi
 
-itens=(	
-	.bash_aliases
-	.bash_profile
-	.bashrc	
-	.config/foot/
-	.config/fuzzel/
-	.config/starship.toml
-	.config/sway/
-	.config/swaync/
-	.config/waybar/
-	.config/wlogout/
-	.gitconfig
-	.profile
-	.zshrc
-)
+# Copia dos arquivos para as pastas de backup
 
-# echo "Copiando itens"
-# for item in "${itens[@]}"; do	
-# 	if [[ -e $HOME/$item ]]; then		
-# 		case $1 in
-# 			-p)
-# 				cp -rv $HOME/./$item pessoal
-# 				;;
-# 			-t)
-# 				cp -rv $HOME/./$item trabalho
-# 				;;
-# 		esac		
-# 	fi
-# done
+echo "Copiando itens"
+
+case $1 in
+	-p)
+		dest=pessoal
+		;;
+	-t)
+		dest=trabalho
+		;;
+esac		
+
+rsync --files-from=backup-list.txt --recursive --ignore-missing-args $HOME $dest
+
+# Push para o repositório
 
 if [ -n "$(git status --porcelain)" ]; then 
 	echo "Atualizando no GIT"
