@@ -24,19 +24,19 @@ itens=(
 	.zshrc
 )
 
-echo "Copiando itens"
-for item in "${itens[@]}"; do	
-	if [[ -e $HOME/$item ]]; then		
-		case $1 in
-			-p)
-				cp -rv $HOME/./$item pessoal
-				;;
-			-t)
-				cp -rv $HOME/./$item trabalho
-				;;
-		esac		
-	fi
-done
+# echo "Copiando itens"
+# for item in "${itens[@]}"; do	
+# 	if [[ -e $HOME/$item ]]; then		
+# 		case $1 in
+# 			-p)
+# 				cp -rv $HOME/./$item pessoal
+# 				;;
+# 			-t)
+# 				cp -rv $HOME/./$item trabalho
+# 				;;
+# 		esac		
+# 	fi
+# done
 
 if [ -n "$(git status --porcelain)" ]; then 
 	echo "Atualizando no GIT"
