@@ -29,10 +29,10 @@ for item in "${itens[@]}"; do
 	if [[ -e $HOME/$item ]]; then		
 		case $1 in
 			-p)
-				cp -rv $HOME/$item pessoal
+				cp -rv $HOME/./$item pessoal
 				;;
 			-t)
-				cp -rv $HOME/$item trabalho
+				cp -rv $HOME/./$item trabalho
 				;;
 		esac		
 	fi
