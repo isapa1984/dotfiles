@@ -1,32 +1,34 @@
 // -*- mode: jsonc -*-
-{
+[{
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 30, // Waybar height (to be removed for auto height)
+    "height": 20, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "output": "DP-1",
+    "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad"
     ],
-    "modules-center": [
-        "sway/window"
-    ],
+    // "modules-center": [
+    //     "sway/window"
+    // ],
     "modules-right": [
-        "idle_inhibitor",
+        // "idle_inhibitor",
+        "tray",
         "pulseaudio",
         "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
-        "backlight",
-        "sway/language",
+        // "power-profiles-daemon",
+        // "cpu",
+        // "memory",
+        // "temperature",
+        // "backlight",
+        // "sway/language",
+        "keyboard-state",
         "battery",
-        "clock",
-        "tray"
+        "clock"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -103,8 +105,9 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%d/%m/%Y %H:%M}",
+        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "{calendar}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -195,4 +198,13 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
+},
+{
+    "layer": "top",
+    "output": "!DP-1",
+    "modules-left": [
+        "sway/workspaces", 
+        "sway/mode"
+    ],
 }
+]

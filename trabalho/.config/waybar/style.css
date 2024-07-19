@@ -281,7 +281,7 @@ label:focus {
 }
 
 #keyboard-state {
-    background: #97e1ad;
+    background: rgb(94, 196, 138);
     color: #000000;
     padding: 0 0px;
     margin: 0 5px;
@@ -293,7 +293,7 @@ label:focus {
 }
 
 #keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgb(119, 242, 172);
 }
 
 #scratchpad {
