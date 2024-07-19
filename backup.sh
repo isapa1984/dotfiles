@@ -12,14 +12,16 @@ itens=(
 	.bash_aliases
 	.bash_profile
 	.bashrc	
-	.gitconfig
-	.config/starship.toml
-	.zshrc
-	.config/sway/
-	.config/waybar/
-	.config/wofi/
-	.config/fuzzel/
 	.config/foot/
+	.config/fuzzel/
+	.config/starship.toml
+	.config/sway/
+	.config/swaync/
+	.config/waybar/
+	.config/wlogout/
+	.gitconfig
+	.profile
+	.zshrc
 )
 
 echo "Copiando itens"
