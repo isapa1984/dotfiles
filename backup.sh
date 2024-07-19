@@ -29,10 +29,10 @@ for item in "${itens[@]}"; do
 	if [[ -e $HOME/$item ]]; then		
 		case $1 in
 			-p)
-				rsync -R $HOME/./$item pessoal
+				cp -r $HOME/./$item pessoal
 				;;
 			-t)
-				rsync -R $HOME/./$item trabalho
+				cp -r $HOME/./$item trabalho
 				;;
 		esac		
 	fi
