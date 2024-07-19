@@ -35,3 +35,5 @@ if [ -n "$(git status --porcelain)" ]; then
 else 
 	echo "Nada para atualizar no GIT"
 fi
+
+echo "Concluído!"
