@@ -18,7 +18,7 @@
   "timeout": 10,
   "timeout-low": 5,
   "timeout-critical": 0,
-  "fit-to-screen": true,
+  "fit-to-screen": false,
   "relative-timestamps": true,
   "control-center-width": 500,
   "control-center-height": 600,
@@ -51,21 +51,22 @@
     "inhibitors",
     "title",
     "dnd",
+    "volume",
     "notifications"
   ],
   "widget-config": {
     "inhibitors": {
       "text": "Inhibitors",
-      "button-text": "Clear All",
+      "button-text": "Limpar Notificações",
       "clear-all-button": true
     },
     "title": {
-      "text": "Notifications",
+      "text": "Notificações",
       "clear-all-button": true,
-      "button-text": "Clear All"
+      "button-text": "Limpar"
     },
     "dnd": {
-      "text": "Do Not Disturb"
+      "text": "Não Perturbe"
     },
     "label": {
       "max-lines": 5,

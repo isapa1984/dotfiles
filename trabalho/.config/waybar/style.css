@@ -92,7 +92,8 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #power-profiles-daemon,
-#mpd {
+#mpd, 
+#custom-notification {
     padding: 0 10px;
     color: #ffffff;
 }
