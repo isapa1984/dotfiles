@@ -47,10 +47,7 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-/* you can set a style on hover for any module like this */
-#pulseaudio:hover {
-    background-color: #a37800;
-}
+
 
 #workspaces button {
     padding: 0 5px;
@@ -93,7 +90,9 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd, 
-#custom-notification {
+#custom-notification,
+#custom-poweroff 
+{
     padding: 0 10px;
     color: #ffffff;
 }
@@ -113,9 +112,9 @@ button:hover {
     margin-right: 0;
 }
 
-#clock {
+/* #clock {
     background-color: #64727D;
-}
+} */
 
 #battery {
     background-color: #ffffff;
@@ -185,23 +184,28 @@ label:focus {
     background-color: #90b1b1;
 }
 
-#network {
+/* #network {
     background-color: #2980b9;
 }
 
 #network.disconnected {
     background-color: #f53c3c;
-}
+} */
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    /* background-color: #f1c40f; */
+    color: #ffffff;
 }
 
-#pulseaudio.muted {
+/* #pulseaudio.muted {
     background-color: #90b1b1;
     color: #2a5c45;
-}
+} */
+
+/* you can set a style on hover for any module like this */
+/* #pulseaudio:hover {
+    background-color: #a37800;
+} */
 
 #wireplumber {
     background-color: #fff0f5;
@@ -234,9 +238,9 @@ label:focus {
     background-color: #eb4d4b;
 }
 
-#tray {
+/* #tray {
     background-color: #2980b9;
-}
+} */
 
 #tray > .passive {
     -gtk-icon-effect: dim;
@@ -282,8 +286,8 @@ label:focus {
 }
 
 #keyboard-state {
-    background: rgb(94, 196, 138);
-    color: #000000;
+    /* background: rgb(94, 196, 138); */
+    color: #ffffff;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
@@ -294,7 +298,9 @@ label:focus {
 }
 
 #keyboard-state > label.locked {
-    background: rgb(119, 242, 172);
+    /* color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);     */
+    font-weight: bolder;
 }
 
 #scratchpad {
