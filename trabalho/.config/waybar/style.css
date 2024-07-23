@@ -1,11 +1,11 @@
 * {
     font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 window#waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -283,8 +283,7 @@ label:focus {
     min-width: 16px;
 }
 
-#keyboard-state {
-    /* background: rgb(94, 196, 138); */
+#keyboard-state {    
     color: #ffffff;
     padding: 0 0px;
     margin: 0 5px;
@@ -295,10 +294,8 @@ label:focus {
     padding: 0 5px;
 }
 
-#keyboard-state > label.locked {
-    /* color: rgb(0, 0, 0);
-    background: rgb(255, 255, 255);     */
-    font-weight: bolder;
+#keyboard-state > label.locked {    
+    text-decoration: underline;
 }
 
 #scratchpad {
