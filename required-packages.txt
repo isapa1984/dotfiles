@@ -11,6 +11,7 @@ symbols-nerd-fonts
 
 -- Sway --
 
+alacritty
 fuzzel
 swaync (remover o dunst)
 wlogout
