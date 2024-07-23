@@ -13,5 +13,7 @@ symbols-nerd-fonts
 
 alacritty
 fuzzel
-swaync (remover o dunst)
+swaylock
+swaync
+waybar
 wlogout
