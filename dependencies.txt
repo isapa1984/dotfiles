@@ -17,3 +17,5 @@ swaylock
 swaync
 waybar
 wlogout
+pavucontrol
+pasystray
