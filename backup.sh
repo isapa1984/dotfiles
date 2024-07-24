@@ -28,7 +28,7 @@ rsync --files-from=backup-list.txt --recursive --ignore-missing-args $HOME $dest
 if [ -n "$(git status --porcelain)" ]; then 
 	echo "==> Enviado modificações para o repositório"
 	git add -A
-	git commit -m "Modificações"
+	git commit -m "Backup"
 	git push origin main
 else 
 	echo "==> Nenhuma modificação para enviar ao repositório"
