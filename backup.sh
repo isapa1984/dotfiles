@@ -20,12 +20,8 @@ case $1 in
 		;;
 esac		
 
-# Limpa o backup anterior 
-echo "==> Removendo arquivos anteriores"
-rm -rf $dest
-
 # Copia os arquivos para a pasta de backup associada
-echo "==> Realizando backup"
+echo "==> Copiando arquivos"
 rsync --files-from=backup-list.txt --recursive --ignore-missing-args $HOME $dest
 
 # Envia as modificações para o repositório
