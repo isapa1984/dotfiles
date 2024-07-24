@@ -10,10 +10,7 @@ if [[ -z $1 ]]; then
 	exit 0
 fi
 
-# Copia dos arquivos para as pastas de backup
-
-echo "Copiando itens"
-
+# Configura a pasta de backup
 case $1 in
 	-p)
 		dest=pessoal
@@ -23,17 +20,21 @@ case $1 in
 		;;
 esac		
 
+# Limpa o backup anterior 
+rm -rf $dest
+
+# Copia os arquivos para a pasta de backup associada
+echo "Realizando backup"
 rsync --files-from=backup-list.txt --recursive --ignore-missing-args $HOME $dest
 
-# Push para o repositório
-
+# Envia as modificações para o repositório
 if [ -n "$(git status --porcelain)" ]; then 
-	echo "Atualizando no GIT"
-	git add .
-	git commit -m "Backup"
+	echo "Enviado modificações para o repositório"
+	git add -A
+	git commit -m "Modificações"
 	git push origin main
 else 
-	echo "Nada para atualizar no GIT"
+	echo "Nenhuma modificação para enviar"
 fi
 
 echo "Concluído!"

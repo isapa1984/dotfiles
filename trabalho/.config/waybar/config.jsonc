@@ -2,7 +2,7 @@
 [{
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 24, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "output": "DP-1",
     "spacing": 2, // Gaps between modules (4px)
@@ -52,6 +52,7 @@
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
+        // "format": "{name}",
         "format": "{name} {icon}",
         "format-icons": {
             "locked": "",
@@ -102,7 +103,7 @@
         }
     },
     "tray": {
-        "icon-size": 14,
+        // "icon-size": 14,
         "spacing": 10
     },
     "clock": {
