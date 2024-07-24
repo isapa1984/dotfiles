@@ -1,0 +1,6 @@
+color=000000
+font=Inter
+font-size=12
+ignore-empty-password
+indicator-caps-lock
+daemonize

@@ -1,9 +1,10 @@
 // -*- mode: jsonc -*-
-{
+[{
     // "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 20, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
+    // "output": "DP-1",
     "spacing": 2, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
@@ -16,18 +17,20 @@
     ],
     "modules-right": [
         // "idle_inhibitor",
-        "tray",
+        // "pulseaudio/slider",
         // "power-profiles-daemon",
         // "cpu",
         // "memory",
         // "temperature",
         // "backlight",
         // "sway/language",
+        // "battery"
+        "tray",
         "keyboard-state",
-        "network",
         "pulseaudio",
-        "battery"
-        
+        "network",
+        "custom/notification",
+        "custom/poweroff"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -99,14 +102,32 @@
         }
     },
     "tray": {
-        // "icon-size": 21,
+        "icon-size": 14,
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
         "format": "{:%d/%m/%Y %H:%M}",
-        // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
-        "tooltip-format": "{calendar}"
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode"          : "month",
+            "mode-mon-col"  : 3,
+            "weeks-pos"     : "right",
+            "on-scroll"     : 1,
+            "format": {
+                "months":     "<span color='#ffead3'><b>{}</b></span>",
+                "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click": "shift_reset",
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+
     },
     "cpu": {
         "format": "{usage}% ",
@@ -185,6 +206,11 @@
         },
         "on-click": "pavucontrol"
     },
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",
@@ -196,5 +222,30 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/notification": {
+        "tooltip": false,
+        "format": "{icon}",
+        "format-icons": {
+          "notification": "<span foreground='red'><sup></sup></span>",
+          "none": "",
+          "dnd-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-none": "",
+          "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "inhibited-none": "",
+          "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+          "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "custom/poweroff": {
+        "tooltip": false,
+        "format": "",
+        "on-click" : "~/.config/sway/scripts/wlogout.sh"
     }
-}
+}]
