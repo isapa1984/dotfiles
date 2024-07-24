@@ -31,7 +31,7 @@ if [ -n "$(git status --porcelain)" ]; then
 	git commit -m "Modificações"
 	git push origin main
 else 
-	echo "==> Nenhuma modificação para enviar"
+	echo "==> Nenhuma modificação para enviar ao repositório"
 fi
 
 echo "==> Concluído!"
