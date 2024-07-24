@@ -18,7 +18,7 @@
   "timeout": 10,
   "timeout-low": 5,
   "timeout-critical": 0,
-  "fit-to-screen": false,
+  "fit-to-screen": true,
   "relative-timestamps": true,
   "control-center-width": 500,
   "control-center-height": 600,
@@ -52,6 +52,7 @@
     "title",
     "dnd",
     "volume",
+    "mpris",
     "notifications"
   ],
   "widget-config": {
