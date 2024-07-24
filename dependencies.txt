@@ -19,3 +19,4 @@ waybar
 wlogout
 pavucontrol
 pasystray
+network-manager-applet
