@@ -21,20 +21,21 @@ case $1 in
 esac		
 
 # Limpa o backup anterior 
+echo "==> Removendo arquivos anteriores"
 rm -rf $dest
 
 # Copia os arquivos para a pasta de backup associada
-echo "Realizando backup"
+echo "==> Realizando backup"
 rsync --files-from=backup-list.txt --recursive --ignore-missing-args $HOME $dest
 
 # Envia as modificações para o repositório
 if [ -n "$(git status --porcelain)" ]; then 
-	echo "Enviado modificações para o repositório"
+	echo "==> Enviado modificações para o repositório"
 	git add -A
 	git commit -m "Modificações"
 	git push origin main
 else 
-	echo "Nenhuma modificação para enviar"
+	echo "==> Nenhuma modificação para enviar"
 fi
 
-echo "Concluído!"
+echo "==> Concluído!"
