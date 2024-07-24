@@ -9,8 +9,8 @@ pip
 cascadia-fonts-all
 symbols-nerd-fonts
 
--- Sway --
-
+-- SwayFX --
+swayfx
 alacritty
 fuzzel
 swaylock
