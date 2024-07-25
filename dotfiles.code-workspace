@@ -17,10 +17,6 @@
 			"path": "../.config/fuzzel"
 		},
 		{
-			"name": "waybar",
-			"path": "../.config/waybar"
-		},
-		{
 			"name": "sway",
 			"path": "../.config/sway"
 		},
@@ -31,6 +27,10 @@
 		{
 			"name": "swaync",
 			"path": "../.config/swaync"
+		},
+		{
+			"name": "waybar",
+			"path": "../.config/waybar"
 		},
 		{
 			"name": "wlogout",
