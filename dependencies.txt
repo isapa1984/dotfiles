@@ -9,7 +9,7 @@ pip
 cascadia-fonts-all
 symbols-nerd-fonts
 
--- SwayFX --
+-- Sway --
 swayfx
 alacritty
 fuzzel
@@ -18,5 +18,6 @@ swaync
 waybar
 wlogout
 pavucontrol
-pasystray
+pulseaudio-utils
+brightnessctl
 network-manager-applet

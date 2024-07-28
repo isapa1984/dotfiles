@@ -17,13 +17,13 @@
 			// "cpu",
 			// "memory",
 			// "temperature",
-			// "backlight",
 			// "sway/language",
-			// "battery"
 			// "network",
 			"tray",
 			"keyboard-state",
 			"pulseaudio",
+			"backlight",
+			"battery", 
 			"custom/notification",
 			"custom/poweroff"
 		],
@@ -47,8 +47,8 @@
 		"keyboard-state": {
 			"numlock": true,
 			"capslock": true,
-			// "format": "{name}",
-			"format": "{name} {icon}",
+			"format": "{name}",
+			// "format": "{name} {icon}",
 			"format-icons": {
 				"locked": "",
 				"unlocked": ""
@@ -200,11 +200,6 @@
 				"default": ["", "", ""]
 			},
 			"on-click": "pavucontrol"
-		},
-		"pulseaudio/slider": {
-			"min": 0,
-			"max": 100,
-			"orientation": "horizontal"
 		},
 		"custom/media": {
 			"format": "{icon} {}",
