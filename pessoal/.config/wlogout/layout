@@ -2,7 +2,7 @@
     "label" : "lock",
     "action" : "loginctl lock-session",
     "text" : "Bloquear Tela",
-    "keybind" : "l"
+    "keybind" : "b"
 }
 {
     "label" : "logout",
@@ -20,5 +20,5 @@
     "label" : "shutdown",
     "action" : "systemctl poweroff",
     "text" : "Desligar",
-    "keybind" : "s"
+    "keybind" : "d"
 }
