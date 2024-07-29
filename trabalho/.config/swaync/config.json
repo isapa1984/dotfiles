@@ -51,6 +51,7 @@
 		"inhibitors",
 		"title",
 		"dnd",		
+		"volume",
 		"mpris",
 		"notifications"
 	],
@@ -67,6 +68,9 @@
 		},
 		"dnd": {
 			"text": "Não Perturbe"
+		},
+		"backlight": {
+			"label": "Brilho"
 		},
 		"volume": {
 			"label": "Volume"
