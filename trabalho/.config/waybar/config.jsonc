@@ -5,7 +5,7 @@
 		// "position": "bottom", // Waybar position (top|bottom|left|right)
 		"height": 24, // Waybar height (to be removed for auto height)
 		// "width": 1280, // Waybar width
-		"output": "DP-1",
+		"output": "HDMI-A-3",
 		"spacing": 2, // Gaps between modules (4px)
 		// Choose the order of the modules
 		"modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad"],
@@ -239,7 +239,7 @@
 	},
 	{
 		"layer": "top",
-		"output": "!DP-1",
+		"output": "!HDMI-A-3",
 		"modules-left": ["sway/workspaces", "sway/mode"]
 	}
 ]
