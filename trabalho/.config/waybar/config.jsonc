@@ -22,9 +22,9 @@
 			// "battery"
 			// "network",
 			"tray",
-			"custom/notification",
 			"keyboard-state",
 			"pulseaudio",
+			"custom/notification",
 			"custom/poweroff"
 		],
 		// Modules configuration
@@ -47,8 +47,8 @@
 		"keyboard-state": {
 			"numlock": true,
 			"capslock": true,
-			// "format": "{name}",
-			"format": "{name} {icon}",
+			"format": "{name}",
+			// "format": "{name} {icon}",
 			"format-icons": {
 				"locked": "",
 				"unlocked": ""
@@ -103,11 +103,12 @@
 		},
 		"clock": {
 			"format": "{:%d/%m/%Y %H:%M}",
-			"tooltip-format": "<tt><small>{calendar}</small></tt>",
+			// "tooltip-format": "<tt><small>{calendar}</small></tt>",
+			"tooltip-format": "{calendar}",
 			"calendar": {
 				"mode": "month",
 				"mode-mon-col": 3,
-				"weeks-pos": "right",
+				"weeks-pos": "",
 				"on-scroll": 1,
 				"format": {
 					"months": "<span color='#ffead3'><b>{}</b></span>",
@@ -118,10 +119,7 @@
 				}
 			},
 			"actions": {
-				"on-click": "shift_reset",
-				"on-click-right": "mode",
-				"on-scroll-up": "shift_up",
-				"on-scroll-down": "shift_down"
+				"on-click": "mode"
 			}
 		},
 		"cpu": {
@@ -141,8 +139,9 @@
 		},
 		"backlight": {
 			// "device": "acpi_video1",
-			"format": "{percent}% {icon}",
-			"format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+			"format": "{icon} {percent}%",
+			// "format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"]
+			"format-icons": [""]
 		},
 		"battery": {
 			"states": {
@@ -150,11 +149,11 @@
 				"warning": 30,
 				"critical": 15
 			},
-			"format": "{capacity}% {icon}",
-			"format-full": "{capacity}% {icon}",
-			"format-charging": "{capacity}% ",
-			"format-plugged": "{capacity}% ",
-			"format-alt": "{time} {icon}",
+			"format": "{icon} {capacity}%",
+			"format-full": "{icon} {capacity}%",
+			"format-charging": " {capacity}%",
+			"format-plugged": " {capacity}%",
+			"format-alt": "{icon} {time}",
 			// "format-good": "", // An empty format will hide the module
 			// "format-full": "",
 			"format-icons": ["", "", "", "", ""]
@@ -184,11 +183,11 @@
 		},
 		"pulseaudio": {
 			// "scroll-step": 1, // %, can be a float
-			"format": "{volume}% {icon} {format_source}",
-			"format-bluetooth": "{volume}% {icon} {format_source}",
-			"format-bluetooth-muted": " {icon} {format_source}",
-			"format-muted": " {format_source}",
-			"format-source": "{volume}% ",
+			"format": "{icon} {volume}% {format_source}",
+			"format-bluetooth": "{icon}{volume}% {format_source}",
+			"format-bluetooth-muted": "{icon}  {format_source}",
+			"format-muted": "{format_source}",
+			"format-source": " {volume}%",
 			"format-source-muted": "",
 			"format-icons": {
 				"headphone": "",
@@ -200,11 +199,6 @@
 				"default": ["", "", ""]
 			},
 			"on-click": "pavucontrol"
-		},
-		"pulseaudio/slider": {
-			"min": 0,
-			"max": 100,
-			"orientation": "horizontal"
 		},
 		"custom/media": {
 			"format": "{icon} {}",
