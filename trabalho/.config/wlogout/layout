@@ -5,16 +5,16 @@
     "keybind" : "b"
 }
 {
-    "label" : "logout",
-    "action" : "loginctl terminate-user $USER",
-    "text" : "Encerrar Sessão",
-    "keybind" : "e"
-}
-{
     "label" : "reboot",
     "action" : "systemctl reboot",
     "text" : "Reiniciar",
     "keybind" : "r"
+}
+{
+    "label" : "logout",
+    "action" : "loginctl terminate-user $USER",
+    "text" : "Encerrar Sessão",
+    "keybind" : "e"
 }
 {
     "label" : "shutdown",
