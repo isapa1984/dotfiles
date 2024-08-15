@@ -38,7 +38,7 @@ GTK3_SETTINGS=$(
 	gtk-icon-theme-name=$icon_theme
 	gtk-cursor-theme-name=$cursor_theme
 	gtk-font-name=$font_name
-	gtk-application-prefer-dark-theme=true
+	gtk-application-prefer-dark-theme=1
 	SETTINGS
 )
 
