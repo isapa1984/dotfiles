@@ -19,7 +19,6 @@ while getopts ${OPTSTRING} opt; do
 	esac
 done
 
-
 # Setting Dconf settings
 
 gnome_schema="org.gnome.desktop.interface"
