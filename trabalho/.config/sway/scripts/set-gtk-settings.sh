@@ -21,6 +21,7 @@ done
 
 
 # Setting Dconf settings
+
 gnome_schema="org.gnome.desktop.interface"
 
 gsettings set "$gnome_schema" gtk-theme "$gtk_theme"
