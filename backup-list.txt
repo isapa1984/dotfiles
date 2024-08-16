@@ -2,8 +2,8 @@
 .bash_profile
 .bashrc
 .config/alacritty/
-.config/foot/
 .config/fuzzel/
+.config/nvim/
 .config/starship.toml
 .config/sway/
 .config/swaylock/

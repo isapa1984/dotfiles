@@ -3,7 +3,7 @@
 	{
 		// "layer": "top", // Waybar at top layer
 		// "position": "bottom", // Waybar position (top|bottom|left|right)
-		"height": 24, // Waybar height (to be removed for auto height)
+		"height": 26, // Waybar height (to be removed for auto height)
 		// "width": 1280, // Waybar width
 		"output": "HDMI-A-3",
 		"spacing": 2, // Gaps between modules (4px)
@@ -47,7 +47,8 @@
 		"keyboard-state": {
 			"numlock": true,
 			"capslock": true,
-			"format": "{icon} {name}",
+			"format": "{name}",
+			// "format": "{icon} {name}",
 			"format-icons": {
 				"locked": "",
 				"unlocked": ""
@@ -101,10 +102,12 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:%d/%m/%Y %H:%M}",
+			// "locale" : "pt_BR",
+			"format": "{:L%A, %d de %B de %Y - %H:%M}",
 			// "tooltip-format": "<tt><small>{calendar}</small></tt>",
 			"tooltip-format": "{calendar}",
 			"calendar": {
+				// "locale" : "pt_BR",
 				"mode": "month",
 				"mode-mon-col": 3,
 				"weeks-pos": "",
@@ -215,13 +218,13 @@
 			"tooltip": false,
 			"format": "{icon}",
 			"format-icons": {
-				"notification": "<span foreground='red'><sup></sup></span>",
+				"notification": "",
 				"none": "",
-				"dnd-notification": "<span foreground='red'><sup></sup></span>",
+				"dnd-notification": "",
 				"dnd-none": "",
-				"inhibited-notification": "<span foreground='red'><sup></sup></span>",
+				"inhibited-notification": "",
 				"inhibited-none": "",
-				"dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+				"dnd-inhibited-notification": "",
 				"dnd-inhibited-none": ""
 			},
 			"return-type": "json",
