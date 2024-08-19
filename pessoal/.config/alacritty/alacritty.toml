@@ -1,15 +1,19 @@
+import = [
+    "~/.config/alacritty/themes/github_dark_high_contrast.toml"
+]
+
 [window]
-opacity=0.8
+opacity = 0.9
 
 [cursor]
 style = { shape = "Beam", blinking = "On"}
-thickness=0.2
+thickness = 0.2
 
 [font]
-size=12
+size = 12
 
 [selection]
-save_to_clipboard=true
+save_to_clipboard = true
 
 
 
