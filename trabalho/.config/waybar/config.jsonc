@@ -22,9 +22,9 @@
 			// "battery"
 			// "network",
 			"tray",
+			"custom/notification",
 			"keyboard-state",
 			"pulseaudio",
-			"custom/notification",
 			"custom/poweroff"
 		],
 		// Modules configuration
@@ -102,12 +102,9 @@
 			"spacing": 10
 		},
 		"clock": {
-			// "locale" : "pt_BR",
 			"format": "{:L%A, %d de %B de %Y - %H:%M}",
-			// "tooltip-format": "<tt><small>{calendar}</small></tt>",
 			"tooltip-format": "{calendar}",
 			"calendar": {
-				// "locale" : "pt_BR",
 				"mode": "month",
 				"mode-mon-col": 3,
 				"weeks-pos": "",
