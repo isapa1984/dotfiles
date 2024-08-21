@@ -233,7 +233,7 @@
 		},
 		"custom/poweroff": {
 			"tooltip": false,
-			"format": "",
+			"format": "⏻",
 			"on-click": "~/.config/sway/scripts/wlogout.sh"
 		}
 	},
