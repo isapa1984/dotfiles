@@ -22,9 +22,9 @@
 			// "battery"
 			// "network",
 			"tray",
-			"custom/notification",
 			"keyboard-state",
 			"pulseaudio",
+			"custom/notification",
 			"custom/poweroff"
 		],
 		// Modules configuration
