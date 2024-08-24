@@ -120,7 +120,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias rsync='rsync -ah --info=PROGRESS2,STATS1'
 alias sup='sudo dnf upgrade --refresh -y && flatpak update -y'
-alias svi='sudo vi'
+alias svi='sudo nvim'
+alias vi='nvim'
 alias torg='$HOME/apps/time-organizer/main.py'
 alias gdrive='rclone mount google-drive: $HOME/gdrive \
     --buffer-size=64M \
