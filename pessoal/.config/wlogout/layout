@@ -13,7 +13,7 @@
 {
     "label" : "logout",
     "action" : "loginctl terminate-user $USER",
-    "text" : "Encerrar Sessão",
+    "text" : "Sair",
     "keybind" : "e"
 }
 {
