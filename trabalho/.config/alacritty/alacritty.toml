@@ -4,7 +4,7 @@ import = [
 
 [window]
 dimensions = { columns = 150, lines = 35 }
-opacity=0.6
+opacity=0.8
 
 [selection]
 save_to_clipboard = true
