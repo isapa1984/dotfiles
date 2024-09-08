@@ -17,12 +17,11 @@
 			// "hyprland/submap",
 			// "hyprland/window"
 		],
-		"modules-center": [
-		],
+		// "modules-center": [
+		// ],
 		"modules-right": [
 			// "idle_inhibitor",
 			// "pulseaudio/slider",
-			// "power-profiles-daemon",
 			// "cpu",
 			// "memory",
 			// "temperature",
@@ -32,6 +31,7 @@
 			"keyboard-state",
 			"pulseaudio",
 			"backlight",
+			"power-profiles-daemon",
 			"battery",
 			"clock",
 			"custom/notification",
@@ -175,10 +175,10 @@
 			"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
 			"tooltip": true,
 			"format-icons": {
-				"default": "",
-				"performance": "",
-				"balanced": "",
-				"power-saver": ""
+				"default": "󰓅",
+				"performance": "󰓅",
+				"balanced": "󰾅",
+				"power-saver": "󰾆"
 			}
 		},
 		"network": {
