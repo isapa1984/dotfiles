@@ -18,7 +18,6 @@
 			// "hyprland/window"
 		],
 		"modules-center": [
-			"clock"
 		],
 		"modules-right": [
 			// "idle_inhibitor",
@@ -34,6 +33,7 @@
 			"pulseaudio",
 			"backlight",
 			"battery",
+			"clock",
 			"custom/notification",
 			"custom/poweroff"
 		],
