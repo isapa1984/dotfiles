@@ -31,11 +31,11 @@
 			"keyboard-state",
 			"pulseaudio",
 			"backlight",
-			"battery",
 			"power-profiles-daemon",
+			"battery",
 			"custom/notification",
-			"clock",
-			"custom/poweroff"
+			"custom/poweroff",
+			"clock"
 		],
 		// Modules configuration
 		// "sway/workspaces": {
