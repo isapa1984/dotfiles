@@ -1,9 +1,19 @@
 #!/bin/sh
 
-CURRENT_OUTPUT=$(swaymsg -t get_outputs -r | jq -r '.[] | select(.focused == true) | .name')
-NEW_WORKSPACE=$(swaymsg -r -t get_workspaces | jq -r --arg CURRENT_OUTPUT $CURRENT_OUTPUT 'map(select(.output == $CURRENT_OUTPUT).num) | max + 1')
+# case "$1" in
+#     next)
+#         WORKSPACE=$(swaymsg -t get_outputs -r | jq -r 'map(select(.focused == true).current_workspace).[0] | tonumber + 1')
+#         ;;
+#     prev)
+#         WORKSPACE=$(swaymsg -t get_outputs -r | jq -r 'ma(select(.focused == true).current_workspace).[0] | tonumber as $ws | if $ws < 1 then 1 else $ws end')
+#         ;;
+#     *)
+#         echo "Opção Inválida. Use next ou prev"
+#         exit
+#         ;;
+# esac
 
-# echo "Output: $CURRENT_OUTPUT"
-# echo "New Workspace: $NEW_WORKSPACE"
+WORKSPACE=$(swaymsg -t get_outputs -r | jq -r 'map(select(.focused == true).current_workspace).[0] | tonumber + 1')
+# echo "Workspace: $WORKSPACE"
 
-swaymsg "move container to workspace number $NEW_WORKSPACE"
+swaymsg "move container to workspace number $WORKSPACE"
