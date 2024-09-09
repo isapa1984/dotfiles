@@ -31,10 +31,10 @@
 			"keyboard-state",
 			"pulseaudio",
 			"backlight",
-			"power-profiles-daemon",
 			"battery",
-			"clock",
+			"power-profiles-daemon",
 			"custom/notification",
+			"clock",
 			"custom/poweroff"
 		],
 		// Modules configuration
@@ -112,7 +112,7 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:%H:%M}",
+			"format": "{:L%a, %d %b %H:%M}",
 			"tooltip-format": "{:L%A, %d de %B de %Y}",
 			"calendar": {
 				"mode": "month",
@@ -160,19 +160,24 @@
 			},
 			"format": "{icon} {capacity}%",
 			"format-full": "{icon} {capacity}%",
-			"format-charging": " {capacity}%",
-			"format-plugged": " {capacity}%",
+			"format-charging": "{icon} {capacity}%",
+			"format-plugged": "{icon} {capacity}%",
 			"format-alt": "{icon} {time}",
 			// "format-good": "", // An empty format will hide the module
 			// "format-full": "",
-			"format-icons": ["", "", "", "", ""]
+			// "format-icons": ["", "", "", "", ""]
+			"format-icons": {
+				"default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+				"charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+				"plugged": ""
+			}
 		},
 		"battery#bat2": {
 			"bat": "BAT2"
 		},
 		"power-profiles-daemon": {
 			"format": "{icon}",
-			"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+			"tooltip-format": "Perfil de Uso da Bateria: {profile}\nDriver: {driver}",
 			"tooltip": true,
 			"format-icons": {
 				"default": "󰓅",
