@@ -109,9 +109,9 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:%H:%M}",
-			"tooltip-format": "{:L%A, %d de %B de %Y}",
-			// "tooltip-format": "{calendar}",
+			"format": "{:L%a %d %b %Y %H:%M}",
+			// "tooltip-format": "{:L%A, %d de %B de %Y}",
+			"tooltip-format": "{calendar}",
 			"calendar": {
 				"mode": "month",
 				"mode-mon-col": 3,
