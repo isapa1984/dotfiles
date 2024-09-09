@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "loginctl lock-session",
+    "action" : "swaylock",
     "text" : "Bloquear Tela",
     "keybind" : "b"
 }
