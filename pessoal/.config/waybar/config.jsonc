@@ -12,10 +12,10 @@
 			"sway/workspaces", 
 			"sway/mode",
 			"sway/scratchpad",
-			"sway/window",
+			// "sway/window",
 			"hyprland/workspaces",
-			"hyprland/submap",
-			"hyprland/window"
+			"hyprland/submap"
+			// "hyprland/window"
 		],
 		"modules-center": [
 			"clock"
