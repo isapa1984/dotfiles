@@ -11,8 +11,8 @@
 		"modules-left": [
 			"sway/workspaces",
 			"sway/mode",
-			"sway/scratchpad",
-			"sway/window"
+			"sway/scratchpad"
+			// "sway/window"
 		],
 		"modules-center": [
 			"clock"
@@ -109,8 +109,7 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:L%a %d %b %Y %H:%M}",
-			// "tooltip-format": "{:L%A, %d de %B de %Y}",
+			"format": "{:L%a %d %b %H:%M}",
 			"tooltip-format": "{calendar}",
 			"calendar": {
 				"mode": "month",
@@ -170,13 +169,13 @@
 		},
 		"power-profiles-daemon": {
 			"format": "{icon}",
-			"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+			"tooltip-format": "Perfil de Uso da CPU: {profile}\nDriver: {driver}",
 			"tooltip": true,
 			"format-icons": {
-				"default": "",
-				"performance": "",
-				"balanced": "",
-				"power-saver": ""
+				"default": "󰓅",
+				"performance": "󰓅",
+				"balanced": "󰾅",
+				"power-saver": "󰾆"
 			}
 		},
 		"network": {
