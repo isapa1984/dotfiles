@@ -17,8 +17,9 @@
 			// "hyprland/submap",
 			// "hyprland/window"
 		],
-		// "modules-center": [
-		// ],
+		"modules-center": [
+			"clock"
+		],
 		"modules-right": [
 			// "idle_inhibitor",
 			// "pulseaudio/slider",
@@ -34,8 +35,7 @@
 			"power-profiles-daemon",
 			"battery",
 			"custom/notification",
-			"custom/poweroff",
-			"clock"
+			"custom/poweroff"
 		],
 		// Modules configuration
 		// "sway/workspaces": {
@@ -112,8 +112,8 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:L%a, %d %b %H:%M}",
-			"tooltip-format": "{:L%A, %d de %B de %Y}",
+			"format": "{:L%a %d %b %Y %H:%M}",
+			"tooltip-format": "{calendar}",
 			"calendar": {
 				"mode": "month",
 				"mode-mon-col": 3,
