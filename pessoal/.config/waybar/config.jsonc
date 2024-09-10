@@ -112,7 +112,7 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:L%a %d %b %Y %H:%M}",
+			"format": "{:L%a %d %b %H:%M}",
 			"tooltip-format": "{calendar}",
 			"calendar": {
 				"mode": "month",
