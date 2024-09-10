@@ -153,8 +153,9 @@
 			"format-icons": [""]
 		},
 		"battery": {
+			"bat": "BAT1",
+			"interval": 10,
 			"states": {
-				"good": 95,
 				"warning": 30,
 				"critical": 15
 			},
@@ -171,9 +172,6 @@
 				"charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
 				"plugged": ""
 			}
-		},
-		"battery#bat2": {
-			"bat": "BAT2"
 		},
 		"power-profiles-daemon": {
 			"format": "{icon}",
