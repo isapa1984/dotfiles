@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     /* border-bottom: 3px solid rgba(100, 114, 125, 0.5); */
     color: #ffffff;
     transition-property: background-color;
@@ -285,7 +285,7 @@ label:focus {
 }
 
 #keyboard-state {    
-    color: #ffffff;
+    color: grey;
     padding: 0 0px;
     margin: 0 5px;
     min-width: 16px;
@@ -296,7 +296,7 @@ label:focus {
 }
 
 #keyboard-state > label.locked {    
-    text-decoration: underline;
+    color: white;
 }
 
 #scratchpad {

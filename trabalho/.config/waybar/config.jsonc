@@ -5,7 +5,7 @@
 		// "position": "bottom", // Waybar position (top|bottom|left|right)
 		"height": 26, // Waybar height (to be removed for auto height)
 		// "width": 1280, // Waybar width
-		// "output": "DP-1",
+		"output": "DP-1",
 		"spacing": 2, // Gaps between modules (4px)
 		// Choose the order of the modules
 		"modules-left": [
@@ -109,7 +109,7 @@
 			"spacing": 10
 		},
 		"clock": {
-			"format": "{:L%a %d %b %H:%M}",
+			"format": "{:L%a %d %b %Y %H:%M}",
 			"tooltip-format": "{calendar}",
 			"calendar": {
 				"mode": "month",
