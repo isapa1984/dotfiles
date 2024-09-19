@@ -48,8 +48,6 @@
 		}
 	},
 	"widgets": [
-		"backlight",
-		"volume",
     	"mpris",
 		"inhibitors",
 		"title",
