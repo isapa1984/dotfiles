@@ -35,8 +35,8 @@
 			"tray",
 			"keyboard-state",
 			"pulseaudio",
-			"custom/notification",
-			"custom/poweroff"
+			"custom/mako",
+			"custom/powermenu"
 		]
 		
 	},

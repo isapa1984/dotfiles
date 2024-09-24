@@ -184,9 +184,9 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
-    "custom/notification": {
+    "custom/swaync": {
         "tooltip": false,
-        "format": "{icon}",
+        "format": "{icon}  ",
         "format-icons": {
             "notification": "!",
             "none": "",
@@ -204,9 +204,16 @@
         "on-click-right": "swaync-client -d -sw",
         "escape": true
     },
-    "custom/poweroff": {
+    "custom/mako": {
+        "exec": "~/.config/waybar/scripts/mako.sh",        
+        "format":"{}  ",
+        "tooltip": false,        
+        "on-click": "makoctl restore",
+        "restart-interval": 1
+    },
+    "custom/powermenu": {
         "tooltip": false,
-        "format": "⏻",
+        "format": "⏻  ",
         "on-click": "~/.config/sway/scripts/wlogout.sh"
     }
 }

@@ -4,7 +4,6 @@
 .config/alacritty/
 .config/fuzzel/
 .config/foot/
-.config/hypr/
 .config/nvim/
 .config/starship.toml
 .config/sway/

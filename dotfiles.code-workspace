@@ -9,8 +9,24 @@
 			"path": "../.config/alacritty"
 		},
 		{
+			"name": "dunst",
+			"path": "../.config/dunst"
+		},
+		{
+			"name": "foot",
+			"path": "../.config/foot"
+		},
+		{
 			"name": "fuzzel",
 			"path": "../.config/fuzzel"
+		},
+		{
+			"name": "mako",
+			"path": "../.config/mako"
+		},
+		{
+			"name": "nvim",
+			"path": "../.config/nvim"
 		},
 		{
 			"name": "sway",
@@ -31,15 +47,6 @@
 		{
 			"name": "wlogout",
 			"path": "../.config/wlogout"
-		},
-		{
-			"path": "../.config/nvim"
-		},
-		{
-			"path": "../.config/hypr"
-		},
-		{
-			"path": "../.config/foot"
 		}
 	],
 	"settings": {}
