@@ -37,6 +37,9 @@
 		},
 		{
 			"path": "../.config/hypr"
+		},
+		{
+			"path": "../.config/foot"
 		}
 	],
 	"settings": {}
