@@ -205,8 +205,8 @@
         "escape": true
     },
     "custom/mako": {
-        "exec": "~/.config/waybar/scripts/mako.sh",        
-        "format":"{}  ",
+        // "exec": "~/.config/waybar/scripts/mako.sh",        
+        "format":"   ",
         "tooltip": false,        
         "on-click": "makoctl restore",
         "restart-interval": 1
