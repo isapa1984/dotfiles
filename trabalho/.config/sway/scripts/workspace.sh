@@ -26,7 +26,7 @@ case "$COMMAND" in
         SWAY_COMMAND="workspace number $TARGET_WS"
         ;;
     move)
-        SWAY_COMMAND="move container to workspace number $TARGET_WS"
+        SWAY_COMMAND="move container to workspace number $TARGET_WS; workspace number $TARGET_WS"
         ;;
     *)
         echo "Opção Inválida. Use open ou move"
