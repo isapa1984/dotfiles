@@ -206,10 +206,10 @@
     },
     "custom/mako": {
         "tooltip": false,
-        "exec": "~/.config/waybar/modules/mako/scripts/module-update.sh",
+        "exec": "~/.config/mako/scripts/waybar-update.sh",
         "exec-on-event": true,
-        "on-click": "~/.config/waybar/modules/mako/scripts/actions.sh show-history",
-        "on-click-right": "~/.config/waybar/modules/mako/scripts/actions.sh toggle-dnd",
+        "on-click": "~/.config/mako/scripts/actions.sh show-history",
+        "on-click-right": "~/.config/mako/scripts/actions.sh toggle-dnd",
         "signal": 1
     },
     "custom/powermenu": {
