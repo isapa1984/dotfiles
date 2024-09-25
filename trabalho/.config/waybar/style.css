@@ -89,8 +89,8 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #mpd, 
-#custom-notification,
-#custom-poweroff 
+#custom-mako,
+#custom-powermenu 
 {
     padding: 0 10px;
     color: #ffffff;

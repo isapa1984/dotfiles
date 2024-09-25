@@ -6,7 +6,7 @@
 		"height": 26, // Waybar height (to be removed for auto height)
 		// "width": 1280, // Waybar width
 		"output": "DP-1",
-		"spacing": 2, // Gaps between modules (4px),
+		// "spacing": 4, // Gaps between modules (4px),
 		// Modules default config
 		"include": [
 			"~/.config/waybar/modules-config.jsonc"

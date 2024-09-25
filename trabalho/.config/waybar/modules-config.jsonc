@@ -186,7 +186,7 @@
     },
     "custom/swaync": {
         "tooltip": false,
-        "format": "{icon}  ",
+        "format": "{icon}",
         "format-icons": {
             "notification": "!",
             "none": "",
@@ -205,15 +205,16 @@
         "escape": true
     },
     "custom/mako": {
-        // "exec": "~/.config/waybar/scripts/mako.sh",        
-        "format":"   ",
-        "tooltip": false,        
-        "on-click": "makoctl restore",
-        "restart-interval": 1
+        "tooltip": false,
+        "exec": "~/.config/waybar/modules/mako/scripts/module-update.sh",
+        "exec-on-event": true,
+        "on-click": "~/.config/waybar/modules/mako/scripts/actions.sh show-history",
+        "on-click-right": "~/.config/waybar/modules/mako/scripts/actions.sh toggle-dnd",
+        "signal": 1
     },
     "custom/powermenu": {
         "tooltip": false,
-        "format": "⏻  ",
+        "format": "⏻",
         "on-click": "~/.config/sway/scripts/wlogout.sh"
     }
 }
