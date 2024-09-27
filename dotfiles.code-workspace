@@ -9,10 +9,6 @@
 			"path": "../.config/alacritty"
 		},
 		{
-			"name": "dunst",
-			"path": "../.config/dunst"
-		},
-		{
 			"name": "foot",
 			"path": "../.config/foot"
 		},
