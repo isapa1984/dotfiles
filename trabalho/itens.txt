@@ -1,0 +1,9 @@
+.bash_aliases
+.bash_profile
+.bashrc
+.config/sway/config.d/02-displays.conf
+.config/sway/config.d/02-workspaces.conf
+.config/waybar/config.jsonc
+.gitconfig
+.profile
+.zshrc

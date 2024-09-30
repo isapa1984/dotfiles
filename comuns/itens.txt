@@ -1,6 +1,3 @@
-.bash_aliases
-.bash_profile
-.bashrc
 .config/alacritty/
 .config/foot/
 .config/fuzzel/
@@ -12,6 +9,3 @@
 .config/swaync/
 .config/waybar/
 .config/wlogout/
-.gitconfig
-.profile
-.zshrc

@@ -1,36 +1,34 @@
 #!/bin/bash
 
-# Validação do programa
-
+# Verifica se a pasta do ambiente foi especificada
 if [[ -z $1 ]]; then
-	printf "Uso: backup.sh OPÇÃO\n"
-	printf "OPÇÃO:\n"
-	printf "\t-p: Salva na pasta 'pessoal'\n"
-	printf "\t-t: Salva na pasta 'trabalho'\n"
+	echo "Uso: backup.sh AMBIENTE"
 	exit 0
 fi
 
-# Configura a pasta de backup
-case $1 in
-	-p)
-		dest=pessoal
-		;;
-	-t)
-		dest=trabalho
-		;;
-esac		
+PASTA_AMBIENTE=$1
 
-# Copia os arquivos para a pasta de backup associada
-echo "==> Copiando arquivos"
-rsync --files-from=backup-list.txt --recursive --ignore-missing-args $HOME $dest
+# Verifica se a pasta do ambiente existe e se possui o arquivo itens.txt
+if [[ ! -e "$PASTA_AMBIENTE/itens.txt" ]]; then
+	echo "Pasta do ambiente e arquivo 'itens.txt' inexistente."
+	exit 0
+fi
+
+# Copia os itens que são comuns a todos os ambientes, excluindo arquivos específicos do ambiente escolhido
+echo "==> Copiando arquivos comuns"
+rsync -r --ignore-missing-args --files-from=comuns/itens.txt --exclude-from=$PASTA_AMBIENTE/itens.txt $HOME comuns/
+
+# Copia os arquivos para a pasta de backup do ambiente selecionada
+echo "==> Copiando arquivos do ambiente '$PASTA_AMBIENTE'"
+rsync -r --files-from=$PASTA_AMBIENTE/itens.txt --ignore-missing-args $HOME $PASTA_AMBIENTE
 
 # Envia as modificações para o repositório
-if [ -n "$(git status --porcelain)" ]; then 
+if [ -n "$(git status --porcelain)" ]; then
 	echo "==> Enviado modificações para o repositório"
 	git add -A
 	git commit -m "Backup"
 	git push origin main
-else 
+else
 	echo "==> Nenhuma modificação para enviar ao repositório"
 fi
 

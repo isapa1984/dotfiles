@@ -8,16 +8,17 @@ zsh-syntax-highlighting
 pip
 cascadia-fonts-all
 symbols-nerd-fonts
+nvim
 
 -- Sway --
-swayfx
-alacritty
+
+brightnessctl (For Notebooks)
+foot
 fuzzel
-swaylock
-swaync
-waybar
-wlogout
+mako
+network-manager-applet
 pavucontrol
 pulseaudio-utils
-brightnessctl
-network-manager-applet
+swaylock
+waybar
+wlogout

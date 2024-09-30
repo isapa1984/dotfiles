@@ -5,10 +5,6 @@
 			"path": "."
 		},
 		{
-			"name": "alacritty",
-			"path": "../.config/alacritty"
-		},
-		{
 			"name": "foot",
 			"path": "../.config/foot"
 		},
@@ -31,10 +27,6 @@
 		{
 			"name": "swaylock",
 			"path": "../.config/swaylock"
-		},
-		{
-			"name": "swaync",
-			"path": "../.config/swaync"
 		},
 		{
 			"name": "waybar",
