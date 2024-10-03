@@ -13,9 +13,9 @@
 		],
 		// Choose the order of the modules
 		"modules-left": [
-			// "sway/workspaces",
-			// "sway/mode",
-			// "sway/scratchpad",
+			"sway/workspaces",
+			"sway/mode",
+			"sway/scratchpad",
 			// "sway/window",
 			"hyprland/workspaces"
 		],
@@ -53,9 +53,9 @@
 			"~/.config/waybar/modules-config.jsonc"
 		],
 		"modules-left": [
-			// "sway/workspaces",
-			// "sway/mode",
-			// "sway/scratchpad",
+			"sway/workspaces",
+			"sway/mode",
+			"sway/scratchpad",
 			// "sway/window",
 			"hyprland/workspaces"
 		],
