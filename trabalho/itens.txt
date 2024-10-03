@@ -3,6 +3,10 @@
 .bashrc
 .config/sway/config.d/02-displays.conf
 .config/sway/config.d/02-workspaces.conf
+.config/sway/config.d/03-inputs.conf
+.config/hypr/hyprland.conf.d/monitors.conf
+.config/hypr/hyprland.conf.d/windows-workspaces.conf
+.config/hypr/hyprland.conf.d/input.conf
 .config/waybar/config.jsonc
 .gitconfig
 .profile

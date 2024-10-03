@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Verifica se a pasta do ambiente foi especificada
+# Verifica se os parâmetros foram passados corretamente
+
 if [[ -z $1 ]]; then
-	echo "Uso: backup.sh AMBIENTE"
+	echo "Uso: sync.sh AMBIENTE"
 	exit 0
 fi
 
@@ -20,7 +21,7 @@ rsync -r --ignore-missing-args --files-from=comuns/itens.txt --exclude-from=$PAS
 
 # Copia os arquivos para a pasta de backup do ambiente selecionada
 echo "==> Copiando arquivos do ambiente '$PASTA_AMBIENTE'"
-rsync -r --files-from=$PASTA_AMBIENTE/itens.txt --ignore-missing-args $HOME $PASTA_AMBIENTE
+rsync -r --ignore-missing-args --files-from=$PASTA_AMBIENTE/itens.txt $HOME $PASTA_AMBIENTE
 
 # Envia as modificações para o repositório
 if [ -n "$(git status --porcelain)" ]; then

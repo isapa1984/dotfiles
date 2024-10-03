@@ -35,6 +35,9 @@
 		{
 			"name": "wlogout",
 			"path": "../.config/wlogout"
+		},
+		{
+			"path": "../.config/hypr"
 		}
 	],
 	"settings": {}

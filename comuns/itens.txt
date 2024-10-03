@@ -1,6 +1,7 @@
 .config/alacritty/
 .config/foot/
 .config/fuzzel/
+.config/hypr/
 .config/mako/
 .config/nvim/
 .config/starship.toml
