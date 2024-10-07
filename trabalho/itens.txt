@@ -1,9 +1,9 @@
 .bash_aliases
 .bash_profile
 .bashrc
-.config/sway/config.d/02-displays.conf
-.config/sway/config.d/02-workspaces.conf
-.config/sway/config.d/03-inputs.conf
+.config/sway/config.d/displays.conf
+.config/sway/config.d/workspaces.conf
+.config/sway/config.d/inputs.conf
 .config/hypr/hyprland.conf.d/monitors.conf
 .config/hypr/hyprland.conf.d/windows-workspaces.conf
 .config/hypr/hyprland.conf.d/input.conf
