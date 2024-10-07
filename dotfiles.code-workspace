@@ -5,6 +5,10 @@
 			"path": "."
 		},
 		{
+			"name": "alacritty",
+			"path": "../.config/alacritty"
+		},
+		{
 			"name": "foot",
 			"path": "../.config/foot"
 		},
@@ -37,6 +41,7 @@
 			"path": "../.config/wlogout"
 		},
 		{
+			"name": "hypr",
 			"path": "../.config/hypr"
 		}
 	],

@@ -3,7 +3,7 @@
 # Verifica se os parâmetros foram passados corretamente
 
 if [[ -z $1 ]]; then
-	echo "Uso: sync.sh AMBIENTE"
+	echo "Uso: backup.sh AMBIENTE"
 	exit 0
 fi
 
