@@ -3,10 +3,11 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
 #
 # Read `man 5 sway` for a complete reference.
+# The order of loading follows the order of listing
 
-include ~/.config/sway/config.d/init.conf
 include ~/.config/sway/config.d/systemd-cgroups.conf
 include ~/.config/sway/config.d/systemd-session.conf
+include ~/.config/sway/config.d/init.conf
 include ~/.config/sway/config.d/displays.conf
 include ~/.config/sway/config.d/workspaces.conf
 include ~/.config/sway/config.d/user-interface.conf
