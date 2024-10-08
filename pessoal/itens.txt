@@ -2,6 +2,7 @@
 .bash_profile
 .bashrc
 .config/foot/foot.ini
+.config/sway/environment
 .config/sway/config.d/bindings.conf
 .config/sway/config.d/displays.conf
 .config/sway/config.d/inputs.conf
