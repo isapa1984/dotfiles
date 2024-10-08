@@ -8,5 +8,4 @@
 .config/sway/
 .config/swaylock/
 .config/swaync/
-.config/waybar/
 .config/wlogout/

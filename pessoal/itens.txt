@@ -1,10 +1,14 @@
 .bash_aliases
 .bash_profile
 .bashrc
-.config/sway/config.d/02-displays.conf
-.config/sway/config.d/02-windows-rules.conf
-.config/waybar/config.jsonc
+.config/foot/foot.ini
+.config/sway/config.d/bindings.conf
+.config/sway/config.d/displays.conf
+.config/sway/config.d/inputs.conf
+.config/sway/config.d/workspaces.conf
+.config/swaylock/
 .config/waybar/
+.config/mako/config
 .gitconfig
 .profile
 .zshrc

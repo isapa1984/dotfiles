@@ -34,7 +34,7 @@
 			"backlight",
 			"power-profiles-daemon",
 			"battery",
-			"custom/notification",
+			"custom/mako",
 			"custom/poweroff"
 		],
 		// Modules configuration
@@ -245,10 +245,18 @@
 			"on-click-right": "swaync-client -d -sw",
 			"escape": true
 		},
+		"custom/mako": {
+			"tooltip": false,
+			"exec": "~/.config/mako/scripts/waybar-update.sh",
+			"exec-on-event": true,
+			"on-click": "~/.config/mako/scripts/actions.sh show-history",
+			"on-click-right": "~/.config/mako/scripts/actions.sh toggle-dnd",
+			"signal": 1
+		},
 		"custom/poweroff": {
 			"tooltip": false,
 			"format": "⏻",
-			"on-click": "~/.config/sway/scripts/wlogout.sh"
+			"on-click": "~/.config/wlogout/scripts/show.sh"
 		}
 	}
 ]
