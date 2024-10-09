@@ -13,11 +13,12 @@
 		],
 		// Choose the order of the modules
 		"modules-left": [
-			"sway/workspaces",
-			"sway/mode",
-			"sway/scratchpad",
+			// "sway/workspaces",
+			// "sway/mode",
+			// "sway/scratchpad",
 			// "sway/window",
-			"hyprland/workspaces"
+			"hyprland/workspaces",
+			"hyprland/submap"
 		],
 		"modules-center": [
 			"clock"
@@ -39,7 +40,6 @@
 			"custom/mako",
 			"custom/powermenu"
 		]
-		
 	},
 	{
 		// "layer": "top", // Waybar at top layer
@@ -53,11 +53,12 @@
 			"~/.config/waybar/modules-config.jsonc"
 		],
 		"modules-left": [
-			"sway/workspaces",
-			"sway/mode",
-			"sway/scratchpad",
+			// "sway/workspaces",
+			// "sway/mode",
+			// "sway/scratchpad",
 			// "sway/window",
-			"hyprland/workspaces"
+			"hyprland/workspaces",
+			"hyprland/submap"
 		],
 		"modules-center": [
 			"clock"

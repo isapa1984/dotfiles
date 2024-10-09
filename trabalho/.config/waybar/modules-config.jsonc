@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
-{
-    // Modules configuration
+// Modules configuration
+{   
     // "sway/workspaces": {
     //     "disable-scroll": true,
     //     "all-outputs": true,
@@ -17,6 +17,11 @@
     //         "default": ""
     //     }
     // },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-scroll-up": "hyprctl dispatch workspace r+1",
+        "on-scroll-down": "hyprctl dispatch workspace r-1"
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
