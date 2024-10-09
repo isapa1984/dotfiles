@@ -1,0 +1,18 @@
+import = [
+    "~/.config/alacritty/themes/enfocado_dark.toml"
+]
+
+[window]
+padding = {x = 11, y = 6}
+dimensions = { columns = 150, lines = 35 }
+opacity=0.9
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On"}
+thickness = 0.2
+
+[font]
+size = 12

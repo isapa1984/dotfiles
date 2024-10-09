@@ -26,9 +26,3 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Configuração permitir a execução correta de apps Java no Sway
-if [ "$XDG_SESSION_DESKTOP" = "sway" ] ; then
-    # https://github.com/swaywm/sway/issues/595
-    export _JAVA_AWT_WM_NONREPARENTING=1
-fi
-

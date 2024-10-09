@@ -1,6 +1,7 @@
 .bash_aliases
 .bash_profile
 .bashrc
+.config/alacritty/alacritty.toml
 .config/foot/foot.ini
 .config/sway/environment
 .config/sway/config.d/bindings.conf
