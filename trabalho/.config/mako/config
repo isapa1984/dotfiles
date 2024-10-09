@@ -33,7 +33,7 @@ width=400
 # height=300
 
 # margin of notification which is margin for the list of notification block( value in px ).
-outer-margin=5
+outer-margin=10
 # Margin of each individual notification
 margin=7
 
