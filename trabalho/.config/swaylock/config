@@ -1,0 +1,7 @@
+image=~/.local/share/backgrounds/pexels-francesco-ungaro-396547.jpg
+color=000000
+font=Inter
+font-size=11
+ignore-empty-password
+indicator-caps-lock
+daemonize
