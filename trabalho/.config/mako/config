@@ -14,7 +14,7 @@ on-button-left=invoke-default-action
 on-button-middle=dismiss-all
 on-button-right=dismiss
 on-touch=invoke-default-action
-on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+# on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
 
 # [ STYLE OPTIONS ]
 # which installed font for notification( any font installed )
