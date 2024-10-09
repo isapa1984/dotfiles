@@ -1,4 +1,5 @@
 .config/alacritty/
+.config/fastfetch
 .config/foot/
 .config/fuzzel/
 .config/hypr/

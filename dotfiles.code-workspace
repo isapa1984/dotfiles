@@ -43,6 +43,9 @@
 		{
 			"name": "hypr",
 			"path": "../.config/hypr"
+		},
+		{
+			"path": "../.config/fastfetch"
 		}
 	],
 	"settings": {}
