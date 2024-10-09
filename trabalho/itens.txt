@@ -1,10 +1,11 @@
 .bash_aliases
 .bash_profile
 .bashrc
+.config/alacritty/alacritty.toml
 .config/foot/foot.ini
-.config/hypr/hyprland.conf.d/input.conf
-.config/hypr/hyprland.conf.d/monitors.conf
-.config/hypr/hyprland.conf.d/windows-workspaces.conf
+.config/hypr/hyprland.conf.d/03-monitors.conf
+.config/hypr/hyprland.conf.d/04-input.conf
+.config/hypr/hyprland.conf.d/06-windows-workspaces.conf
 .config/mako/config
 .config/sway/config.d/bindings.conf
 .config/sway/config.d/displays.conf
