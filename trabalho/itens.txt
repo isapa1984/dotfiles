@@ -7,6 +7,7 @@
 .config/hypr/hyprland.conf.d/03-monitors.conf
 .config/hypr/hyprland.conf.d/04-input.conf
 .config/hypr/hyprland.conf.d/06-windows-workspaces.conf
+.config/hypr/hyprland.conf.d/07-bindings.conf
 .config/mako/config
 .config/sway/config.d/bindings.conf
 .config/sway/config.d/displays.conf
