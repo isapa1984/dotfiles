@@ -7,9 +7,9 @@ if [[ -z $1 ]]; then
 	exit 0
 fi
 
-PASTA_AMBIENTE=$1
-PASTA_COMUNS=comuns
 ARQUIVO_LISTA_ITENS=itens.txt
+PASTA_COMUNS=comuns
+PASTA_AMBIENTE=$1
 
 # Verifica se a pasta do ambiente existe e se possui o arquivo com a lista de itens para backup
 if [[ ! -e "$PASTA_AMBIENTE/$ARQUIVO_LISTA_ITENS" ]]; then
