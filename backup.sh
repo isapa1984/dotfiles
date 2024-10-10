@@ -8,6 +8,7 @@ if [[ -z $1 ]]; then
 fi
 
 PASTA_AMBIENTE=$1
+PASTA_COMUNS=comuns
 ARQUIVO_LISTA_ITENS=itens.txt
 
 # Verifica se a pasta do ambiente existe e se possui o arquivo com a lista de itens para backup
@@ -23,11 +24,11 @@ fi
 
 # Remove todos os arquivos, exceto o arquivo com a lista de itens para backup
 # Serve para evitar a existência de arquivos que foram excluídos na pasta de origem
-find comuns/ -mindepth 1 ! -name "$ARQUIVO_LISTA_ITENS" -exec rm -rf {} +
+find $PASTA_COMUNS/ -mindepth 1 ! -name "$ARQUIVO_LISTA_ITENS" -exec rm -rf {} +
 
 # Copia os itens que são comuns a todos os ambientes, excluindo arquivos específicos do ambiente escolhido
 echo "==> Copiando arquivos comuns"
-rsync -r --ignore-missing-args --files-from=comuns/$ARQUIVO_LISTA_ITENS --exclude-from=$PASTA_AMBIENTE/$ARQUIVO_LISTA_ITENS $HOME comuns/
+rsync -r --ignore-missing-args --files-from=$PASTA_COMUNS/$ARQUIVO_LISTA_ITENS --exclude-from=$PASTA_AMBIENTE/$ARQUIVO_LISTA_ITENS $HOME $PASTA_COMUNS/
 
 # Remove todos os arquivos, exceto o arquivo com a lista de itens para backup
 find $PASTA_AMBIENTE/ -mindepth 1 ! -name "$ARQUIVO_LISTA_ITENS" -exec rm -rf {} +
