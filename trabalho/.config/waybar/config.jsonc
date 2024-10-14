@@ -15,7 +15,7 @@
 		"modules-left": [
 			// "sway/workspaces",
 			// "sway/mode",
-			// "sway/scratchpad",
+			// "sway/scratchpad"
 			// "sway/window",
 			"hyprland/workspaces",
 			"hyprland/submap"
@@ -55,7 +55,7 @@
 		"modules-left": [
 			// "sway/workspaces",
 			// "sway/mode",
-			// "sway/scratchpad",
+			// "sway/scratchpad"
 			// "sway/window",
 			"hyprland/workspaces",
 			"hyprland/submap"

@@ -156,12 +156,6 @@ fi
 # Krew Plugin para Kubectl
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
-# Kompose completion
-source <(kompose completion zsh)
-
-# Helm completion
-source <(helm completion zsh)
-
 # Configuração de certificados para apps Node
 export NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
 
