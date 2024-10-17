@@ -18,7 +18,7 @@ on-touch=invoke-default-action
 
 # [ STYLE OPTIONS ]
 # which installed font for notification( any font installed )
-font=Inter 12
+font=Inter 13
 
 # background color of notification( #RRGGBB | #RRGGBBAA )
 background-color=#000000CC
@@ -30,10 +30,10 @@ text-color=#FFFFFF
 width=450
 
 # maximum height of notification( value in px )
-# height=300
+# height=350
 
 # margin of notification which is margin for the list of notification block( value in px ).
-outer-margin=5
+outer-margin=10
 # Margin of each individual notification
 margin=7
 
@@ -47,7 +47,7 @@ border-size=1
 border-color=#9a9996
 
 # bordear radious of each notification(value in px )
-border-radius=1
+border-radius=5
 
 # Set popup progress indicator color to color.( value [over|source] ( #RRGGBB | #RRGGBBAA ))
 progress-color=over #0b1c1c
