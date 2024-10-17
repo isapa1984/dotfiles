@@ -9,6 +9,7 @@
 .config/hypr/hyprland.conf.d/06-windows-workspaces.conf
 .config/hypr/hyprland.conf.d/07-bindings.conf
 .config/hypr/hyprlock.conf
+.config/hypr/hyprpaper.conf
 .config/mako/config
 .config/sway/config.d/03-displays.conf
 .config/sway/config.d/03-workspaces.conf
