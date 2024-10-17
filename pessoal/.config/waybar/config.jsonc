@@ -34,7 +34,7 @@
 			"backlight",
 			"power-profiles-daemon",
 			"battery",
-			"custom/mako",
+			// "custom/mako",
 			"custom/poweroff"
 		],
 		// Modules configuration
