@@ -148,3 +148,10 @@ if [[ -d $HOME/.asdf/ ]]; then
     source $HOME/.asdf/plugins/java/set-java-home.zsh
 fi
 
+
+# bun completions
+[ -s "/home/igor/.bun/_bun" ] && source "/home/igor/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
